@@ -19,7 +19,7 @@ The program should allow the following functionality:
 3. Allow the user to search for an item by the item id, and print out the item if found. Error message if not. This can be done with either Find, or Where.
 4. Allow the user to add a new wine item to the list. It should show a nice error message if the user tries to add a wine with a primary id that is already in the DB.
 5. Allow the user to update an existing wine item. (You should not allow the user to update the ID since that is the Primary Key of the database record)
-6. Allow the user to delete an existing wine item. It should show a nice error if the delete can not complete. (Deleting by ID is good enough. If you would like to offer other searches for deletion you can, but are required to.)
+6. Allow the user to delete an existing wine item. It should show a nice error if the delete can not complete. (Deleting by ID is good enough. If you would like to offer other searches for deletion you can, but are not required to.)
 
 Replace the class called WineItem with an Entity Framework Model based on the data in the database. We will do an example of this in class.
 
