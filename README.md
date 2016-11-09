@@ -26,7 +26,7 @@ Replace the class called WineItem with an Entity Framework Model based on the da
 You should transform the WineItemCollection class into an Repository API. Although not required, you may want to rename the class.
 The Entity Framework will add a Collection called Entites, so you will no longer need the WineItemCollection class to function as it currently does. Instead, you should make the WineItemCollection become a class that sits between the code in Program / UI and the newly created EntityFramework classes. This will be discussed in class. If you are confused about it, ask.
 
-Update the class called User Interface to include any new methods that are required to facilitate the above functionality.
+Update the class called User Interface to include any new methods that are required to facilitate the above functionality. You can also remove the option to load the CSV file since it will no longer be needed. 
 
 CSVProcessor can either be removed or left. It will not be used though.
 
