@@ -1,6 +1,6 @@
 # Assignment 5 - Update the Assignment 1 with Wines to use a database instead of a CSV
 
-## Due 11-22-2016
+## Due 04-03-2017
 
 ## Author
 
@@ -73,8 +73,8 @@ Solution Requirements:
 | Search                                  | 10     |
 | Repurpose WineItemCollection as API     | 10     |
 | UI is updated correctly                 | 10     |
-| Handle Errors                           | 5     |
-| DB Connection                           | 5     |
+| Handle Errors                           | 5      |
+| DB Connection                           | 5      |
 | Documentation                           | 5      |
 | README                                  | 5      |
 | Total                                   | 100    |
