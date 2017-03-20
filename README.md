@@ -49,7 +49,7 @@ DatabaseName: Beverage + FirstInital + LastName
 
 Solution Requirements:
 
-* 4 classes (Main, Beverage (EF Version), Beverages (EF Version), and UserInterface. The names can differ, and might due to database names and EF setup. In addition, you will have WineItemCollection if you decided to keep it and re-purpose it.)
+* 4 classes (Main, Beverage (EF Version), Beverages (EF Version), WineItemCollection (Though you may rename), and UserInterface. The names can differ, and might due to database names and EF setup.
 * EntityFramework Model and Collection
 * Repurposed WineItemCollection
 * Read functionality
