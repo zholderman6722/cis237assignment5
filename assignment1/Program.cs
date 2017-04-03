@@ -1,6 +1,6 @@
-﻿//Author: David Barnes
+﻿//Author: Zachery Holderman
 //CIS 237
-//Assignment 1
+//Assignment 5
 /*
  * The Menu Choices Displayed By The UI
  * 1. Load Wine List From CSV
@@ -35,9 +35,11 @@ namespace assignment1
                 Console.WriteLine("2. No");
                 decision = int.Parse(Console.ReadLine());
             }
-
-            
-
+            if(decision == 2)
+            {
+                Console.WriteLine("GoodBye");
+                Environment.Exit(0);
+            }
         }
     }
 }

@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Author Zachery Holderman
+//CIS237
+//Assignment 5
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
