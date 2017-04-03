@@ -21,94 +21,22 @@ namespace assignment1
     {
         static void Main(string[] args)
         {
-            //Set a constant for the size of the collection
-            const int wineItemCollectionSize = 4000;
-
-            //Set a constant for the path to the CSV File
-            const string pathToCSVFile = "../../../datafiles/winelist.csv";
-
-            //Create an instance of the UserInterface class
-            UserInterface userInterface = new UserInterface();
-
-            //Create an instance of the WineItemCollection class
-            IWineCollection wineItemCollection = new WineItemCollection(wineItemCollectionSize);
-
-            //Create an instance of the CSVProcessor class
-            CSVProcessor csvProcessor = new CSVProcessor();
-
-            //Display the Welcome Message to the user
-            userInterface.DisplayWelcomeGreeting();
-
-            //Display the Menu and get the response. Store the response in the choice integer
-            //This is the 'primer' run of displaying and getting.
-            int choice = userInterface.DisplayMenuAndGetResponse();
-
-            while (choice != 5)
+            Console.WriteLine("Welcome to the Wine Program!");
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("1. Run The program");
+            Console.WriteLine("2. Exit the program");
+            int decision = int.Parse(Console.ReadLine());
+            while(decision == 1)
             {
-                switch (choice)
-                {
-                    case 1:
-                        //Load the CSV File
-                        bool success = csvProcessor.ImportCSV(wineItemCollection, pathToCSVFile);
-                        if (success)
-                        {
-                            //Display Success Message
-                            userInterface.DisplayImportSuccess();
-                        }
-                        else
-                        {
-                            //Display Fail Message
-                            userInterface.DisplayImportError();
-                        }
-                        break;
-
-                    case 2:
-                        //Print Entire List Of Items
-                        string[] allItems = wineItemCollection.GetPrintStringsForAllItems();
-                        if (allItems.Length > 0)
-                        {
-                            //Display all of the items
-                            userInterface.DisplayAllItems(allItems);
-                        }
-                        else
-                        {
-                            //Display error message for all items
-                            userInterface.DisplayAllItemsError();
-                        }
-                        break;
-
-                    case 3:
-                        //Search For An Item
-                        string searchQuery = userInterface.GetSearchQuery();
-                        string itemInformation = wineItemCollection.FindById(searchQuery);
-                        if (itemInformation != null)
-                        {
-                            userInterface.DisplayItemFound(itemInformation);
-                        }
-                        else
-                        {
-                            userInterface.DisplayItemFoundError();
-                        }
-                        break;
-
-                    case 4:
-                        //Add A New Item To The List
-                        string[] newItemInformation = userInterface.GetNewItemInformation();
-                        if (wineItemCollection.FindById(newItemInformation[0]) == null)
-                        {
-                            wineItemCollection.AddNewItem(newItemInformation[0], newItemInformation[1], newItemInformation[2]);
-                            userInterface.DisplayAddWineItemSuccess();
-                        }
-                        else
-                        {
-                            userInterface.DisplayItemAlreadyExistsError();
-                        }
-                        break;
-                }
-
-                //Get the new choice of what to do from the user
-                choice = userInterface.DisplayMenuAndGetResponse();
+                NewUserInterface ui = new NewUserInterface();
+                ui.UserInteface();
+                Console.WriteLine("Run the program again?");
+                Console.WriteLine("1. Yes");
+                Console.WriteLine("2. No");
+                decision = int.Parse(Console.ReadLine());
             }
+
+            
 
         }
     }

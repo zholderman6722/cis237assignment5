@@ -2,7 +2,7 @@
 
 ## Due 04-03-2017
 
-## Author
+## Zachery Holderman
 
 ## Description
 
@@ -80,5 +80,7 @@ Solution Requirements:
 | Total                                   | 100    |
 
 ## Outside Resources Used
+That car model Database we did in class was super useful...
 
 ## Known Problems, Issues, And/Or Errors in the Program
+I still have yet to find any...I may have resolved the one issue I was having which when adding a new wine item to the list and then attempted to update an existing wine item it screamed about not having the primary key values passed in matching that of the operation I was trying to do?
